@@ -11,6 +11,9 @@ importers:
       '@fontsource/roboto':
         specifier: ^5.1.1
         version: 5.1.1
+      '@twa-dev/sdk':
+        specifier: ^8.0.1
+        version: 8.0.1(react@18.3.1)
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -33,6 +36,9 @@ importers:
       '@tailwindcss/typography':
         specifier: ^0.5.15
         version: 0.5.15(tailwindcss@3.4.17)
+      '@twa-dev/types':
+        specifier: ^8.0.1
+        version: 8.0.1
       '@types/node':
         specifier: ^22.10.5
         version: 22.10.5
@@ -590,6 +596,14 @@ packages:
     resolution: {integrity: sha512-AqhlCXl+8grUz8uqExv5OTtgpjuVIwFTSXTrh8y9/pw6q2ek7fJ+Y8ZEVw7EB2DCcuCOtEjf9w3+J3rzts01uA==}
     peerDependencies:
       tailwindcss: '>=3.0.0 || insiders || >=4.0.0-alpha.20'
+
+  '@twa-dev/sdk@8.0.1':
+    resolution: {integrity: sha512-mBR5dnAvSyRx7YGt/n0Owq1z8MsWhsuh76JD1abV0TZWHi6RQSPXBNAG0XMOMO7Vf5hsAwUTul+x54vf43Ku0A==}
+    peerDependencies:
+      react: ^18.3.1
+
+  '@twa-dev/types@8.0.1':
+    resolution: {integrity: sha512-/m3KiULhI4fdeoI5K9Op9jFbmdPjxaAdrZBJ3BA1fS4lVmKCx9XuLTeumzYeuOW577eHAJWaZkcSpWBOss4Epw==}
 
   '@types/estree@1.0.6':
     resolution: {integrity: sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==}
@@ -2492,6 +2506,13 @@ snapshots:
       lodash.merge: 4.6.2
       postcss-selector-parser: 6.0.10
       tailwindcss: 3.4.17
+
+  '@twa-dev/sdk@8.0.1(react@18.3.1)':
+    dependencies:
+      '@twa-dev/types': 8.0.1
+      react: 18.3.1
+
+  '@twa-dev/types@8.0.1': {}
 
   '@types/estree@1.0.6': {}
 
