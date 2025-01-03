@@ -1,6 +1,6 @@
 export const App = () => {
   return (
-    <main>
+    <main className="flex-auto">
       <section>
         <header>
           <h1>Hello World</h1>
